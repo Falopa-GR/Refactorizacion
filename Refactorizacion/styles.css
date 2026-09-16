@@ -1,0 +1,130 @@
+:root {
+    --color-primary: #ff007f;      /* rosa neón */
+    --color-secondary: #00f0ff;    /* cian neón */
+    --color-bg-dark: #0a0a12;      /* fondo general del sitio */
+    --color-bg-card: #1a1a2e;      /* fondo de la tarjeta destacada */
+    --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+   BASE
+   --------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: var(--color-bg-dark);
+    color: var(--color-white);
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.header-title {
+    color: var(--color-secondary);
+    margin: 0;
+}
+
+.header-subtitle {
+    margin-top: 5px;
+    color: var(--color-white);
+}
+
+nav a {
+    color: var(--color-white);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    outline: none;
+}
+
+h2 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.tarjeta {
+    border: 2px solid var(--color-primary);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+#destacado {
+    background-color: var(--color-bg-card);
+}
+
+.tarjeta-titulo-destacado {
+    color: var(--color-secondary);
+}
+
+.tarjeta-titulo {
+    color: var(--color-primary);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    border: 1px solid var(--color-secondary);
+    padding: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-enviar {
+    background-color: var(--color-secondary);
+    color: var(--color-bg-dark);
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-enviar:hover,
+.btn-enviar:focus {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    outline: 2px solid var(--color-white);
+    outline-offset: 2px;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 20px;
+}
+
+.footer-titulo {
+    margin: 0;
+}
+
+.footer-contacto {
+    margin-top: 5px;
+    color: var(--color-bg-card);
+}
+
